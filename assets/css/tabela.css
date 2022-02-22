@@ -1,0 +1,112 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+    *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body, input, select, textarea {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15pt;
+    font-weight: 300 !important;
+    letter-spacing: -0.025em;
+    line-height: 1.75em;
+  }
+
+  #bg {
+    -moz-animation: bg 60s linear infinite;
+    -webkit-animation: bg 60s linear infinite;
+    -ms-animation: bg 60s linear infinite;
+    animation: bg 60s linear infinite;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  /* Set your background with this */
+
+    background: #348cb2 url("images/bg.jpg") bottom left;
+    background-repeat: repeat-x;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+  }
+
+@-moz-keyframes bg {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    100% {
+      -moz-transform: translate3d(-2250px,0,0);
+      -webkit-transform: translate3d(-2250px,0,0);
+      -ms-transform: translate3d(-2250px,0,0);
+      transform: translate3d(-2250px,0,0);
+    }
+  }
+
+  @-webkit-keyframes bg {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    100% {
+      -moz-transform: translate3d(-2250px,0,0);
+      -webkit-transform: translate3d(-2250px,0,0);
+      -ms-transform: translate3d(-2250px,0,0);
+      transform: translate3d(-2250px,0,0);
+    }
+  }
+
+  @-ms-keyframes bg {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    100% {
+      -moz-transform: translate3d(-2250px,0,0);
+      -webkit-transform: translate3d(-2250px,0,0);
+      -ms-transform: translate3d(-2250px,0,0);
+      transform: translate3d(-2250px,0,0);
+    }
+  }
+
+  @keyframes bg {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    100% {
+      -moz-transform: translate3d(-2250px,0,0);
+      -webkit-transform: translate3d(-2250px,0,0);
+      -ms-transform: translate3d(-2250px,0,0);
+      transform: translate3d(-2250px,0,0);
+    }
+  }
+
+  #bg {
+    background-size: 2250px auto;
+    width: 6750px;
+  }
