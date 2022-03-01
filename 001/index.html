@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<link rel = "shortcut icon" type = "imagem/x-icon" href = "logo.png"/>
+		<title>Central de Serviços Skyrail Bahia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/b3187005da.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body class="loading">
+
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				
+				
+				<header id="header">
+					<!--<audio controls>
+   						<source src="boletim.mp3" type="audio/mpeg">
+						Seu navegador não suporta o audio relacionado.
+						</audio>-->
+						<h1> <img src="brokepage/images/logo.png" > </h1>
+						<nav>
+							<table>
+								<tr>
+									<!--<td><a href="Escala de Rodizio Home Office.html" class="fas fa-file-excel"></a></td>-->
+									<td><a href="paginas/Central RH.html" class="fas fa-users"></a></td>
+									<td><a href="paginas/centralit.html" class="fas fa-laptop-code"></a></td>
+									<td><a href="https://docs.google.com/spreadsheets/d/1zqObxMLK0pE4TJFTAhHmMvvL8eWLfU0P8e3NCpR9NE8/edit?usp=sharing" class="fas fa-address-book"></a></td>
+									<td><a href="https://byd2-my.sharepoint.com/:x:/g/personal/qhseskyrail_glb_byd_com/EWsm-R--OOZElcnFKPC5AkEBTsgAKwfzs4ueT3lnP9bCkw" class="fas fa-folder-open"></a></td>
+									<td><a href="ftp://qhsedocs:Byd!2020@10.42.17.53:443/" class="fas fa-book"></a></td>
+									<td><a href="http://10.42.17.53/Login_v1/login.php" class="fas fa-chart-pie"></a></td>
+									<td><a href="/pages/kpi_select_branch.html" class="fas fa-chart-line"></a></td>
+
+								</tr>
+								<tr>
+									
+									<!--<th><p>Rodizio</p><img src="updates.png" width="45" height="50"></th>-->
+									<th><p>Central RH</p></th>
+									<th><p>Central <br>I.T.</p></th>
+									<th><p>Lista de Contatos</p></th>
+									<th><p>QHSE Docs</p></th>
+									<th><p>Portal PMBOK</p><p>(Em manutenção)</p></th>
+									<th><p>Management Dashboard</p></th>
+									<th><p>KPI</p></th>
+								</tr>
+							</table>
+						</nav>
+				
+						</header>
+
+				
+					<footer id="footer">
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+
+		
+		<!--Aqui é onde fica o PoupUp na Tela -->
+		<!--Para não exibir mais, apenas retirar a class mostrar-->
+		<div id="modal-atualizacao" class="modal-container "> <!-- Para voltar a exibir, Colocar a classe 'mostrar' junto com a classe modal-container" -->
+			<div class="modal">
+				<button class="fechar">x</button>
+				<!--Aqui é onde escolhe a imagem para de informação-->
+				<!--<a href="" target="_blank">-->
+					<img src="images/setembro amarelo.jpg" width="900px" >
+				<!--</a>-->
+
+
+			</div>
+ 
+		</div>
+		
+		<!--Fazendo o botão Funcionar-->
+		<script>
+			
+			function fechar(modalID){
+				const modal = document.getElementById(modalID);
+				modal.classList.remove ('mostrar');
+			}
+
+			const botao =document.querySelector('.fechar');
+			console.log(botao);
+			botao.addEventListener('click', function(){
+				fechar('modal-atualizacao')
+			})
+		</script>
+
+
+	</body>
+</html>
